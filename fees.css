@@ -1,0 +1,119 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Toggle Menu styles */
+.menu_fees {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 2;
+}
+
+.menu_fees i {
+    color: #333;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.sidenav {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hide sidenav by default */
+    width: 250px;
+    z-index: 999;
+    height: 100vh;
+    background-color: rgb(80, 76, 76);
+    flex-direction: column;
+    display: flex;
+    transition: left 0.3s ease;
+}
+
+.menu-toggle:checked + .menu_fees + .sidenav {
+    left: 0; 
+}
+
+/* Profile and Navigation styles */
+.profile_image {
+    background-color: rgb(60, 168, 60);
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+.profile_image img {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+}
+
+.profile_image .text {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+    color: whitesmoke;
+}
+
+.sidenavbar {
+    padding: 0 30px;
+}
+
+.sidenavbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidenavbar ul li {
+    margin-top: 30px;
+}
+
+.sidenavbar ul a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/* Main content styles */
+.main-content {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+table {
+    width: 100%;
+    border-top: 4px solid rgb(5, 122, 5);
+    border-radius: 5px;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: rgb(39, 35, 35);
+}
+
+tr:nth-child(even) {
+    background-color: #f4f4f4;
+}

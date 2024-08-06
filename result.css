@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body{
+    background-color: whitesmoke;
+    padding: 40px 30px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.tittle{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tittle .description-left{
+    display: flex;
+    gap: 20px;
+}
+
+.tittle .description-right{
+    display: flex;
+    gap: 20px;
+}
+
+.semester_credit{
+    margin-bottom: 20px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.semester_Gpa{
+    display: flex;
+    gap: 20px;
+
+}
+.credit_houres{
+    display: flex;
+    gap: 20px;
+
+}
+
+
+
+
+th{
+    width: 300px;
+    margin: 30px;
+    color: rgb(39, 35, 35);
+    margin-bottom: 10px;
+
+}
+
+tr{
+    text-align: left;
+    width: 100%;
+}
+
+td{
+    width: 300px;
+
+    padding-top: 20px;
+    /* margin: 30px; */
+    margin-bottom: 20px;
+}

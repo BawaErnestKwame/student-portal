@@ -10,119 +10,114 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
     <div class="navbar">
-    <div class="menu">
-        <i class="fa-solid fa-bars"></i>
-    </div>
-        <div class="sidenav">
+        <div class="menu">
+            <label for="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
+        <div class="sidenav" id="mySidenav">
             <div class="profile_image">
-        
                 <img src="./images/IMG-20240219-WA0072.jpg" alt="">
                 <div class="text">
                     <h1>m</h1>
                     <h2>Hi, Ernest</h2>
                 </div>
-                
             </div>
-
             <nav class="sidenavbar">
                 <ul>
-                <a href="./profile.html">Profile</a>
-                <a href="./results.html">Results</a>
-                <a href="./registeration.html">Registration</a>
-                <a href="./history.html">History</a>
-                <a href="./fees.html">Fess</a>
-            </ul>
-
+                    <a href="./profile.html" class="sidebar_profile">Profile</a>
+                    <hr>
+                    <a href="./results.html">Results</a>
+                    <hr>
+                    <a href="./registeration.html">Registration</a>
+                    <hr>
+                    <a href="./history.html">History</a>
+                    <hr>
+                    <a href="./fees.html">Fess</a>
+                    <hr>
+                </ul>
+                <div class="log-out">
+                    <h2>dhfvbdsl</h2>
+                </div>
             </nav>
-            
-
         </div>
-        
         <div class="profile_picture">
             <div class="image">
                 <img src="./images/IMG-20240219-WA0072.jpg" alt="">
-
             </div>
             <div class="name_edit">
                 <h2>BAWA Ernest Kwame</h2>
                 <h3>Edit</h3>
             </div>
         </div>
-
     </div>
+    <div class="main_container">
+        <form>
+            <div class="input_filed">
+                <label for="contact">Index Number</label>
+                <input type="text" placeholder="UEB3518322" name="Indexnuber" id="input_box">
+            </div>
+            <div class="input_filed">
+                <label for="contact">Reference Number</label>
+                <input type="text" placeholder="UA22088322" name="REFERENCE NUMBER" id="input_box">
+            </div>
+            <div class="input_filed">
+                <label for="name">FullName</label>
+                <input type="text" placeholder="BAWA Ernest Kwame" name="FullName" id="input_box">
+            </div>
+            <div class="input_filed">
+                <label for="contact">Program</label>
+                <input type="text" placeholder="BSC. COMPUTER SCIENCE" name="program" id="input_box">
+            </div>
+            <div class="input_filed">
+                <label for="department">Department</label>
+                <input type="text" placeholder="COMPUTER SCIENCE AND INFORMATICS" name="program" id="input_box">
+            </div>
+            <div class="input_filed">
+                <label for="school">School</label>
+                <input type="text" placeholder="SCHOOL OF SCIENCE" name="Indexnuber" id="input_box">
+            </div>
+            <div class="input_filed">
+                <label for="contact 1">Contact 1</label>
+                <input type="text" placeholder="(059) (93)-6218" name="contact" id="input_box">
+            </div>
 
-        <div class="main_container">
-            <form>
-                <div class="input_filed">
-                    <label for="contact">Index Number</label>
-                    <input type="text" placeholder="UEB3518322" name="Indexnuber" id="input_box">
-                </div>
-                <div class="input_filed">
-                    <label for="contact">Reference Number</label>
-                    <input type="text" placeholder="UA22088322" name="REFERENCE NUMBER" id="input_box">
-                </div>
-                <div class="input_filed">
-                    <label for="name">FullName</label>
-                    <input type="text" placeholder="BAWA Ernest Kwame" name="FullName" id="input_box">
-                </div>
-                <div class="input_filed">
-                    <label for="contact">Program</label>
-                    <input type="text" placeholder="BSC. COMPUTER SCIENCE" name="program" id="input_box">
-                </div>
-                <div class="input_filed">
-                    <label for="department">Department</label>
-                    <input type="text" placeholder="COMPUTER SCIENCE AND INFORMATICS" name="program" id="input_box">
-                </div>
-                <div class="input_filed">
-                    <label for="school">School</label>
-                    <input type="text" placeholder="SCHOOL OF SCIENCE" name="Indexnuber" id="input_box">
-                </div>
-                <div class="input_filed">
-                    <label for="contact 1">Contact 1</label>
-                    <input type="text" placeholder="(059) (93)-6218" name="contact" id="input_box">
-                </div>
+            <div class="input_filed">
+                <label for="date">DOB (yyy/mm/dd)</label>
+                <input type="date" placeholder="2001-OB-08-27T00:00:00" name="date" id="input_box">
+            </div>
+            <div class="input_filed">
+                <label for="gender">Gender</label>
+                <input type="text" placeholder="Male" name="male" id="input_box">
+            </div>
+            <div class="input_filed">
+                <label for="level">Level</label>
+                <input type="text" placeholder="Level" name="level" id="input_box">
+            </div>
+            <div class="input_filed">
+                <label for="email">personal Email</label>
+                <input type="email" placeholder="bawaernest926@gmail.com" name="date" id="input_box">
+            </div>
+            <div class="input_filed">
+                <label for="enrollment">Enrollment Option</label>
+                <input type="text" placeholder="REGULAR" name="enroll" id="input_box">
+            </div>
+            <div class="input_filed">
+                <label for="email">Enrollment Date</label>
+                <input type="date" placeholder="3/9/2023 11:47 AM" name="date" id="input_box">
+            </div>
+            <div class="input_filed">
+                <label for="contact">Contact 2</label>
+                <input type="text" placeholder="503202708" name="contact" id="input_box">
+            </div>
 
-                <div class="input_filed">
-                    <label for="date">DOB (yyy/mm/dd)</label>
-                    <input type="date" placeholder="2001-OB-08-27T00:00:00" name="date" id="input_box">
-                </div>
-                <div class="input_filed">
-                    <label for="gender">Gender</label>
-                    <input type="text" placeholder="Male" name="male" id="input_box">
-                </div>
-                <div class="input_filed">
-                    <label for="level">Level</label>
-                    <input type="text" placeholder="Level" name="level" id="input_box">
-                </div>
-                <div class="input_filed">
-                    <label for="email">personal Email</label>
-                    <input type="email" placeholder="bawaernest926@gmail.com" name="date" id="input_box">
-                </div>
-                <div class="input_filed">
-                    <label for="enrollment">Enrollment Option</label>
-                    <input type="text" placeholder="REGULAR" name="enroll" id="input_box">
-                </div>
-                <div class="input_filed">
-                    <label for="email">Enrollment Date</label>
-                    <input type="date" placeholder="3/9/2023 11:47 AM" name="date" id="input_box">
-                </div>
-                <div class="input_filed">
-                    <label for="contact">Contact 2</label>
-                    <input type="text" placeholder="503202708" name="contact" id="input_box">
-                </div>
-
-                <div class="input_filed">
-                    <label for="contact">Marital Status</label>
-                    <input type="text" placeholder="SINGLE" name="marital Status" id="input_box">
-                </div>
-
-
-            </form>
-        
-        
+            <div class="input_filed">
+                <label for="contact">Marital Status</label>
+                <input type="text" placeholder="SINGLE" name="marital Status" id="input_box">
+            </div>
+        </form>
     </div>
-    
 </body>
 </html>

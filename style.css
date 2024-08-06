@@ -1,77 +1,63 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+/* Your existing styles */
+
+.menu-toggle {
+    display: none;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
-body{
-    width: 100%;
-    
-}
-
-.fa-bars{
-    font-size: 30px;
-    color: rgb(5, 122, 5);
-
-}
-
-.navbar{
-    width: 100%;
-    height: 32vh;
-    background-color: #fff;
+.sidenav {
     position: fixed;
     top: 0;
-    right: 0;
-    left: 0;
+    left: -250px; /* Hide sidenav by default */
+    width: 250px;
     z-index: 999;
+    height: 100vh;
+    background-color: rgb(80, 76, 76);
+    flex-direction: column;
+    display: flex;
+    transition: left 0.3s ease;
 }
 
-.menu{
+.menu-toggle:checked + .navbar .sidenav {
+    left: 0; 
+}
+
+.menu-toggle:checked ~ .sidenav {
+    left: 0; 
+}
+
+.menu {
     height: 40px;
     background-color: #f0efef;
-   
     display: block;
     padding: 5px 20px;
 }
 
-
-::-webkit-scrollbar{
-    width: 10px;
-
+.fa-bars {
+    font-size: 30px;
+    color: rgb(5, 122, 5);
+    cursor: pointer;
 }
 
-::-webkit-scrollbar-track{
-    background-color: antiquewhite;
+/* Other existing styles */
+
+.log-out {
+    flex-direction: column;
+    justify-content: flex-end;
+    display: flex;
 }
 
-::-webkit-scrollbar-thumb{
-    background: linear-gradient(orange,blue);
-    border-radius: 10px;
+.log-out h2 {
+    margin-top: 25%;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.sidenav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 40%;
-    z-index: 999;
-    height: 100vh;
-    background-color: brown;
-    
-   
-}
-
-.sidenavbar{
+.sidenavbar {
     padding: 0 30px;
 }
 
-.sidenav .profile_image{
-    background-color: rgb(5, 122, 5);
+.sidenav .profile_image {
+    background-color: rgb(60, 168, 60);
     height: 20vh;
     width: 100%;
     display: flex;
@@ -79,45 +65,45 @@ body{
     justify-content: center;
     flex-direction: column;
     padding-top: 15px;
-
 }
 
-.sidenav .profile_image .text{
+.sidenav .profile_image .text {
     display: flex;
     margin-top: 20px;
     gap: 10px;
     color: whitesmoke;
 }
 
-.sidenav .profile_image img{
+.sidenav .profile_image img {
     width: 70PX;
     height: 70PX;
     border-radius: 35px;
 }
 
-.sidenavbar ul{
+.sidenavbar ul {
     display: flex;
     flex-direction: column;
-   
-
 }
 
-.sidenavbar ul a{
+.sidenavbar ul a {
     color: whitesmoke;
     text-decoration: none;
     margin-top: 30px;
 }
 
-.main_container{
-    width: 100%;
-
-    
-    padding: 0 20px;
-    margin-top:220px ;
-    
+hr {
+    width: 238px;
+    margin-left: -30px;
+    margin-top: 15px;
 }
 
-.profile_picture{
+.main_container {
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 220px;
+}
+
+.profile_picture {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,47 +111,34 @@ body{
     height: 30vh;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-
-    /* position: fixed;
-    /* top: 0; 
-    right: 0;
-    left: 0; */
 }
 
-
-
-
- .profile_picture .name_edit{
+.profile_picture .name_edit {
     text-align: center;
     margin-top: 50px;
-    
 }
 
-.main_container .profile_picture .name_edit h2{
-
+.main_container .profile_picture .name_edit h2 {
     font-size: 2rem;
-    
 }
 
-.profile_picture .name_edit h3{
-    color:rgb(5, 122, 5) ;
+.profile_picture .name_edit h3 {
+    color: rgb(5, 122, 5);
     font-size: 2rem;
-    
 }
 
-.image img{
+.image img {
     width: 7rem;
     height: 7rem;
     border: 1px solid;
     border-radius: 50%;
 }
 
-.input_filed{
+.input_filed {
     margin: 10px;
-
 }
 
-.input_filed #input_box{
+.input_filed #input_box {
     width: 100%;
     display: block;
     padding: 10px;
@@ -176,7 +149,7 @@ body{
     border-radius: 5px;
 }
 
-.input_filed label{
+.input_filed label {
     font-size: 1rem;
     font-weight: 600;
     color: rgb(5, 122, 5);
@@ -184,15 +157,13 @@ body{
 
 /* fees */
 
-.fees_container{
+.fees_container {
     background-color: aqua;
-  
 }
 
-.menu_fees{
+.menu_fees {
     height: 40px;
     background-color: #f0efef;
-   
     display: block;
     padding: 5px 20px;
     position: fixed;
@@ -202,19 +173,16 @@ body{
     z-index: 999;
 }
 
-table{
-   width: 100%;
-   margin-top: 50px;
-   
+table {
+    width: 100%;
+    margin-top: 50px;
     border-top: 4px solid rgb(5, 122, 5);
     border-radius: 5px;
-
 }
 
-.menu_register{
+.menu_register {
     height: 40px;
     background-color: #f0efef;
-   
     display: block;
     padding: 5px 20px;
     position: fixed;
@@ -222,30 +190,76 @@ table{
     right: 0;
     left: 0;
     z-index: 999;
-
 }
 
-th{
+th {
     width: 200px;
     margin: 30px;
     color: rgb(39, 35, 35);
     margin-bottom: 10px;
-
 }
 
-tr{
+tr {
     text-align: left;
     width: 100%;
 }
 
-td{
+td {
     width: 100px;
-
     padding: 10px;
-    /* margin: 30px; */
     margin-bottom: 20px;
 }
 
+.select_cont {
+    width: 50%;
+    border: none;
+    background-color: #eee9e9;
+    padding: 10px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
 
+.select_cont:hover {
+    border: 1px solid rgb(5, 122, 5);
+}
 
+.select {
+    display: flex;
+    padding: 20px 30px;
+    gap: 20px;
+}
 
+option {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-bottom: 1px solid white;
+    display: flex;
+}
+
+.academic {
+    background-color: aqua;
+}
+
+.history table {
+    border-top: none;
+    padding: 0 30px;
+    margin-top: 0;
+    background-color: #eee9e9;
+}
+
+.sidebar_profile:hover ~ .sidenav {
+    width: -40%;
+}
+
+@media screen and (min-width: 900px) {
+    hr {
+        width: 542px;
+    }
+
+    .sidenavbar ul a:hover ~ .sidenav {
+        display: none;
+        background-color: aqua;
+    }
+}
