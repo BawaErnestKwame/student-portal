@@ -1,4 +1,4 @@
-/* General styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,10 +9,14 @@ body {
 
 a {
     text-decoration: none;
-    color: #333;
+    color: #333333;
 }
 
-/* Toggle Menu styles */
+ .menu_fees.fa-bars{
+    color: darkgreen;
+}
+
+
 .menu_fees {
     position: fixed;
     top: 10px;
@@ -33,7 +37,7 @@ a {
 .sidenav {
     position: fixed;
     top: 0;
-    left: -250px; /* Hide sidenav by default */
+    left: -250px; 
     width: 250px;
     z-index: 999;
     height: 100vh;
@@ -47,7 +51,7 @@ a {
     left: 0; 
 }
 
-/* Profile and Navigation styles */
+
 .profile_image {
     background-color: rgb(60, 168, 60);
     height: 20vh;
@@ -90,7 +94,7 @@ a {
     text-decoration: none;
 }
 
-/* Main content styles */
+
 .main-content {
     padding: 20px;
     margin-top: 50px;

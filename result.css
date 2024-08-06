@@ -1,71 +1,153 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 
-body{
+/* body {
     background-color: whitesmoke;
-    padding: 40px 30px;
     font-size: 14px;
     font-weight: 600;
+    display: flex;
+    flex-direction: column;
+} */
+
+.menu-toggle {
+    display: none;
 }
 
-.tittle{
+.sidenav {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hide sidenav by default */
+    width: 250px;
+    z-index: 999;
+    height: 100vh;
+    background-color: rgb(80, 76, 76);
+    flex-direction: column;
+    display: flex;
+    transition: left 0.3s ease;
+    
+    z-index: 1000;
+
+}
+
+.menu-toggle:checked + .menu + .sidenav {
+    left: 0; 
+}
+
+.menu {
+    height: 40px;
+    background-color: #e4e1e1;
+  width: 100%;
+    padding: 5px 20px;
+    z-index: 1000;
+}
+
+.fa-bars {
+    font-size: 30px;
+    color: rgb(5, 122, 5);
+    cursor: pointer;
+}
+
+.log-out {
+    flex-direction: column;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.log-out h2 {
+    margin-top: 25%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sidenavbar {
+    padding: 0 30px;
+}
+
+.sidenav .profile_image {
+    background-color: rgb(60, 168, 60);
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+.sidenav .profile_image .text {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+    color: whitesmoke;
+}
+
+.sidenav .profile_image img {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+}
+
+.sidenavbar ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.sidenavbar ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin-top: 30px;
+    letter-spacing: .5px;
+    font-size: 1rem;
+}
+
+.content {
+    padding: 40px 30px;
+    margin-left: 250px; /* Adjusted for the sidenav */
+}
+
+.tittle {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
-.tittle .description-left{
+.tittle .description-left, .tittle .description-right {
     display: flex;
     gap: 20px;
 }
 
-.tittle .description-right{
-    display: flex;
-    gap: 20px;
-}
-
-.semester_credit{
+.semester_credit {
     margin-bottom: 20px;
     justify-content: space-between;
     display: flex;
 }
 
-.semester_Gpa{
+.semester_Gpa, .credit_houres {
     display: flex;
     gap: 20px;
-
-}
-.credit_houres{
-    display: flex;
-    gap: 20px;
-
 }
 
-
-
-
-th{
+th {
     width: 300px;
     margin: 30px;
     color: rgb(39, 35, 35);
     margin-bottom: 10px;
-
 }
 
-tr{
+tr {
     text-align: left;
     width: 100%;
 }
 
-td{
+td {
     width: 300px;
-
     padding-top: 20px;
-    /* margin: 30px; */
     margin-bottom: 20px;
 }

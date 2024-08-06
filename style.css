@@ -1,4 +1,36 @@
-/* Your existing styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text{
+    position: relative;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.fa-window-restore{
+    position: absolute;
+    color: red;
+    font-size: 18px;
+    top: 5px;
+    left: -25px;
+}
+
+.profile_picture{
+    gap: 10px;
+}
+
+.navbar{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
 
 .menu-toggle {
     display: none;
@@ -7,7 +39,7 @@
 .sidenav {
     position: fixed;
     top: 0;
-    left: -250px; /* Hide sidenav by default */
+    left: -250px; 
     width: 250px;
     z-index: 999;
     height: 100vh;
@@ -38,13 +70,29 @@
     cursor: pointer;
 }
 
-/* Other existing styles */
 
 .log-out {
-    flex-direction: column;
+    border-top: 1px solid white;
+    gap: 20px;
     justify-content: flex-end;
     display: flex;
 }
+
+.log-out p{
+    color: red;
+    margin-top: 200px;
+    font-size: 18px;
+
+}
+
+.fa-pen{
+    color: red;
+    margin-top: 200px;
+    font-size: 18px;
+   
+}
+
+
 
 .log-out h2 {
     margin-top: 25%;
@@ -54,6 +102,14 @@
 
 .sidenavbar {
     padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+ul a{
+
 }
 
 .sidenav .profile_image {
@@ -80,6 +136,12 @@
     border-radius: 35px;
 }
 
+
+
+
+
+
+
 .sidenavbar ul {
     display: flex;
     flex-direction: column;
@@ -89,12 +151,7 @@
     color: whitesmoke;
     text-decoration: none;
     margin-top: 30px;
-}
-
-hr {
-    width: 238px;
-    margin-left: -30px;
-    margin-top: 15px;
+    font-size: 1rem;
 }
 
 .main_container {
@@ -155,7 +212,7 @@ hr {
     color: rgb(5, 122, 5);
 }
 
-/* fees */
+
 
 .fees_container {
     background-color: aqua;
@@ -254,10 +311,6 @@ option {
 }
 
 @media screen and (min-width: 900px) {
-    hr {
-        width: 542px;
-    }
-
     .sidenavbar ul a:hover ~ .sidenav {
         display: none;
         background-color: aqua;
